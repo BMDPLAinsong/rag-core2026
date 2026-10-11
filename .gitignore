@@ -1,0 +1,15 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行时数据（ChromaDB 向量库 / 上传的测试文件）
+data/chroma/
+data/uploads/
+data/*.sqlite3
+data/*.bin
+
+# 历史遗留空壳仓库（rag-core/rag-core，仅含 .gitattributes，确认无用后可手动删除）
+rag-core/

@@ -1,0 +1,13 @@
+# requirements.txt
+fastapi
+uvicorn
+pydantic
+pyyaml
+langchain
+langchain-community
+langchain-text-splitters
+langchain-chroma
+langchain-ollama
+pypdf
+chromadb
+langchain-core>=0.3.0

@@ -1,0 +1,45 @@
+# RAG-Core 通用配置
+app:
+  name: rag-core
+  host: 0.0.0.0
+  port: 8000
+
+ollama:
+  base_url: http://localhost:11434
+  embed_model: nomic-embed-text
+  chat_model: SetneufPT/Qwopus3.5-4B-Coder-MTP_Q4_64k_8GB-GPU:latest 
+
+chroma:
+  persist_directory: ./data/chroma
+  collection_name: rag_docs
+
+chunking:
+  chunk_size: 512
+  chunk_overlap: 50
+  separators:
+    - "\n\n"
+    - "\n"
+    - "。"
+    - "！"
+    - "？"
+    - "；"
+    - "，"
+    - " "
+    - ""
+
+retrieval:
+  top_k: 4
+
+generation:
+  temperature: 0.7
+  max_tokens: 2048
+
+  # config.yaml
+rag:
+  embedding_model: "nomic-embed-text"
+  llm_model: "SetneufPT/Qwopus3.5-4B-Coder-MTP_Q4_64k_8GB-GPU:latest"
+  vector_store_path: "./chroma_db"
+  chunk_size: 512
+  chunk_overlap: 64
+  top_k: 5
+  data_dir: "./data"
