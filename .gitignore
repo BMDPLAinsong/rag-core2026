@@ -6,6 +6,7 @@ __pycache__/
 venv/
 
 # 运行时数据（ChromaDB 向量库 / 上传的测试文件）
+chroma_db/
 data/chroma/
 data/uploads/
 data/*.sqlite3
